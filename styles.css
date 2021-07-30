@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+}
+
+title {
+  display: none;
+}
+
+header {
+  padding: 20px;
+  color: black;
+  background-color: white;
+  font-size: 40px;
+}
+
+body {
+  background-color: #24272e;
+  color: antiquewhite;
+}
+.score_board {
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  margin: 30px 0px;
+  padding: 20px 0px;
+  border: 3px solid white;
+  width: 200px;
+  font-size: 50px;
+  position: relative;
+}
+
+.badge {
+  background-color: tomato;
+  padding: 5px;
+  font-size: 20px;
+}
+
+#user_label {
+  position: absolute;
+  top: 30px;
+  left: -26px;
+}
+
+#comp_label {
+  position: absolute;
+  top: 30px;
+  right: -26px;
+}
+
+.status_message {
+  font-size: 29px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.choices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 40px 0px;
+}
+
+.choice {
+  width: 150px;
+  padding: 20px;
+  border: 4px solid white;
+  border-radius: 50%;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background-color: rgba(63, 63, 68, 0.973);
+}
+
+#action_message {
+  margin: 30px 0;
+  font-size: 27px;
+}
+
+.green_glow {
+  border: 4px solid #4dcc7d;
+  box-shadow: 0 0 10px #31b43a;
+}
+
+.red_glow {
+  border: 4px solid #fc121b;
+  box-shadow: 0 0 10px #d01115;
+}
+
+/* .status_message > sup:first-child {
+  margin-right: 0.5em;
+} */
